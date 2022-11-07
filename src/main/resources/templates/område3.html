@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="/src/main/resources/static/main.css">
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
@@ -15,9 +15,51 @@
   <li><a href="http://localhost:8080/webservice">Webservice</a></li>
 </ul>
 
+
+
+
 <div>
   <h2>Samtidighedsproblematikker</h2>
 </div>
+<ul role="tablist">
+  <li><button onclick="change(this)" class="questionButton" id="1">1</button></li>
+  <li><button onclick="change(this)" class="questionButton" id="2">2</button></li>
+  <li><button onclick="change(this)" class="questionButton" id="3">3</button></li>
+  <li><button onclick="change(this)" class="questionButton" id="4">4</button></li>
+</ul>
 
+<div>
+  <div id="div1"> <h2>Sprøgsmål 1: Beskriv hvad der gør et problem til et samtidighedsproblem gerne ift. jeres projekt. <br></h2>
+    <h3>Svar: </h3></div>
+  <div style="display: none" id="div2"> <h2>Sprøgsmål 2: Beskriv en type af samtidighedsproblemer og gerne praktisk. <br></h2>
+    <h3>Svar: </h3></div>
+  <div style="display: none" id="div3"> <h2>Sprøgsmål 3: Findes der nogle standard løsninger til at løse samtidighedsproblemer på? <br></h2>
+    <h3>Svar: </h3></div>
+  <div style="display: none" id="div4"><h2>Sprøgsmål 4: Beskriv Deadlock. <br></h2>
+    <h3>Svar: </h3></div>
+
+</div>
 </body>
+<script>
+
+  function change(element) {
+
+    document.getElementById('div1').style.display = "none"
+    document.getElementById('div2').style.display = "none"
+    document.getElementById('div3').style.display = "none"
+    document.getElementById('div4').style.display = "none"
+
+    switch (element.id){
+      case '1': document.getElementById('div1').style.display = "block"
+        break
+      case '2': document.getElementById('div2').style.display = "block"
+        break
+      case '3': document.getElementById('div3').style.display = "block"
+        break
+      case '4': document.getElementById('div4').style.display = "block"
+        break
+    }
+  }
+
+</script>
 </html>

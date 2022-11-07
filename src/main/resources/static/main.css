@@ -24,3 +24,11 @@ li a {
 li a:hover {
     background-color: #111;
 }
+
+.questionButton{
+    border-radius: 2px;
+    width: 60px;
+}
+li button:hover {
+    background-color: cornflowerblue;
+}

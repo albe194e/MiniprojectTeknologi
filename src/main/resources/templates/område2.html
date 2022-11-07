@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="/src/main/resources/static/main.css">
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
@@ -14,10 +14,56 @@
   <li><a href="http://localhost:8080/område4">Område 4</a></li>
   <li><a href="http://localhost:8080/webservice">Webservice</a></li>
 </ul>
-
 <div>
   <h2>Talsystemer, Debug</h2> <br>
 </div>
 
+<ul role="tablist">
+  <li><button onclick="change(this)" class="questionButton" id="1">1</button></li>
+  <li><button onclick="change(this)" class="questionButton" id="2">2</button></li>
+  <li><button onclick="change(this)" class="questionButton" id="3">3</button></li>
+  <li><button onclick="change(this)" class="questionButton" id="4">4</button></li>
+  <li><button onclick="change(this)" class="questionButton" id="5">5</button></li>
+</ul>
+
+<div>
+  <div id="div1"> <h2>Sprøgsmål 1: Forklar hvad vi kan bruge følgende talsystemer til samt deres navne: <br> •16 –talsystemet <br> •10 –talsystemet <br>•2 –talsystemet <br></h2>
+    <h3>Svar: </h3></div>
+  <div style="display: none" id="div2"> <h2>Sprøgsmål 2: Forklar hvordan man regner mellem binær og decimal. <br></h2>
+    <h3>Svar: </h3></div>
+  <div style="display: none" id="div3"> <h2>Sprøgsmål 3: Forklar hvordan man regner mellem binær og hexa decimal. <br></h2>
+    <h3>Svar: </h3></div>
+  <div style="display: none" id="div4"><h2>Sprøgsmål 4: Forklar hvad forkortelserne DDL og DML og hvad de bruges til. <br></h2>
+    <h3>Svar: </h3></div>
+  <div style="display: none" id="div5"><h2>Sprøgsmål 5: Beskriv hvordan man opretter et MySQL DBMS på Azureog hvad vi kan bruge sådan et til.1af 1 <br></h2>
+    <h3>Svar: </h3></div>
+</div>
 </body>
+<script>
+
+  function change(element) {
+
+
+    document.getElementById('div1').style.display = "none"
+    document.getElementById('div2').style.display = "none"
+    document.getElementById('div3').style.display = "none"
+    document.getElementById('div4').style.display = "none"
+    document.getElementById('div5').style.display = "none"
+
+
+    switch (element.id){
+      case '1': document.getElementById('div1').style.display = "block"
+        break
+      case '2': document.getElementById('div2').style.display = "block"
+        break
+      case '3': document.getElementById('div3').style.display = "block"
+        break
+      case '4': document.getElementById('div4').style.display = "block"
+        break
+      case '5': document.getElementById('div5').style.display = "block"
+        break
+    }
+  }
+
+</script>
 </html>
