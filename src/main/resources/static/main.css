@@ -1,6 +1,7 @@
-body{
+body {
     background-color: chocolate;
 }
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -21,14 +22,28 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
+
 li a:hover {
     background-color: #111;
 }
 
-.questionButton{
+.questionButton {
     border-radius: 2px;
     width: 60px;
 }
+
 li button:hover {
     background-color: cornflowerblue;
+}
+
+button {
+    margin: 2px 3px;
+}
+
+h2 {
+    font-family: "Times New Roman";
+}
+
+h3 {
+    font-family: "Times New Roman";
 }
